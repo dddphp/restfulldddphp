@@ -1,0 +1,16 @@
+!SESSION 2016-09-26 16:38:24.428 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.php.product -data /home/router/proyectosphp/restfulldddphp -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.ui 4 4 2016-09-26 16:41:21.317
+!MESSAGE Conflicting handlers for org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu: {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1d557a5} vs {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1b5ce0f}
+
+!ENTRY org.eclipse.ui 4 4 2016-09-26 16:41:21.328
+!MESSAGE Conflicting handlers for org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu: {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1d557a5} vs {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1da84cf}
+
+!ENTRY org.eclipse.ui 4 4 2016-09-26 16:41:21.332
+!MESSAGE Conflicting handlers for org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu: {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1d557a5} vs {org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1da84cf}
