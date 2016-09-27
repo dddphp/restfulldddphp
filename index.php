@@ -37,11 +37,32 @@ function include_dir($path,$read=false) {
 
 
 include_dir('dom');
+include_dir('repository');
 foreach (get_declared_classes() as &$valor) {
 	$rc = new ReflectionClass($valor);
+	
 	if($rc->getNamespaceName()=="dom")
 	{
 		echo $rc->getName();
+		//$rm = new ReflectionMethod($valor);
+		$métodos_clase = $rc->getMethods(ReflectionMethod::IS_PUBLIC);
+		//var_dump($métodos_clase);
+		echo "<br>";
+		foreach ($métodos_clase as $nombre_método) {
+			echo $nombre_método->name;
+			echo "<br>";
+		}
+		
+	}
+	if($rc->getNamespaceName()=="repo")
+	{
+		echo "<br>".$rc->getName();
+		$métodos_clase = $rc->getMethods(ReflectionMethod::IS_PUBLIC);
+		echo "<br>";
+		foreach ($métodos_clase as $nombre_método) {
+			echo $nombre_método->name;
+			echo "<br>";
+		}
 	}
 	
 }
