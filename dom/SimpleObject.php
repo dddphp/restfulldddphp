@@ -5,12 +5,13 @@ class SimpleObject {
     private  $apellido = 'hola';
 
     public function getNombre(){
+    	echo 'hola';
         return $this->nombre;
     }
 
-    public function setName($name){
+    /*public function setName($name){
         $this->nombre = $nombre;
-    }
+    }*/
 
 }
 ?>
