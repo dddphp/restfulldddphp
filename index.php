@@ -36,6 +36,13 @@ function include_dir($path,$read=false) {
 }
 
 
+
+function parseCamelCase($str)
+{
+	return preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]|[0-9]{1,}/', ' $0', $str);
+}
+
+
 include_dir('dom');
 include_dir('repository');
 foreach (get_declared_classes() as &$valor) {
@@ -48,7 +55,8 @@ foreach (get_declared_classes() as &$valor) {
 		//var_dump($métodos_clase)
 		echo "<br>";
 		foreach ($métodos_clase as $nombre_método) {
-			echo $nombre_método->name;
+
+			echo parseCamelCase($nombre_método->name);
 			
 			$rm = new ReflectionMethod($rc->getName(),$nombre_método->name);
 			$rm->invoke($rc->newInstanceArgs());
