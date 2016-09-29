@@ -1,6 +1,6 @@
 <?php
 namespace repo;
-class SimpleRepo {
+class OtroRepo {
 	public function decirHola(){
 		return 'hola';
 	}
