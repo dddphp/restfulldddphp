@@ -9,7 +9,9 @@ class SimpleRepo {
 	public function title(){
 		return 'titulo';
 	}
-
+	public function mostrarAlgo(){
+		return 'titulo';
+	}
 
 }
 ?>
